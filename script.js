@@ -16,6 +16,7 @@ function showError(input, errMsg) {
 
 function showSuccess(input) {
   const formCtrl = input.parentElement;
+<<<<<<< HEAD
   formCtrl.classList.remove('error');
   formCtrl.classList.add('success');
 }
@@ -30,11 +31,19 @@ function isValidEmail(mail) {
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
+=======
+  formCtrl.classList.add('success');
+}
+
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+>>>>>>> b86d11baff40e9eefbc2e9c3e8fe20a0936fc15d
   if (username.value === '') {
     showError(username, 'Username is required');
   } else {
     showSuccess(username);
   }
+<<<<<<< HEAD
 
   if (email.value === '') {
     showError(email, 'Email is required');
@@ -44,12 +53,22 @@ form.addEventListener('submit', function (e) {
     showSuccess(email);
   }
 
+=======
+  if (email.value === '') {
+    showError(email, 'Email is required');
+  } else {
+    showSuccess(email);
+  }
+>>>>>>> b86d11baff40e9eefbc2e9c3e8fe20a0936fc15d
   if (password.value === '') {
     showError(password, 'Password is required');
   } else {
     showSuccess(password);
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> b86d11baff40e9eefbc2e9c3e8fe20a0936fc15d
   if (password2.value === '') {
     showError(password2, 'Password2 is required');
   } else {
